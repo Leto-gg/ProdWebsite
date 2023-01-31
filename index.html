@@ -97,7 +97,7 @@
 
               function login() {
                 webAuth.authorize({
-                  redirectUri: 'http://localhost:8080/callback',
+                  redirectUri: 'http://localhost:8080/',
                   responseType: 'token id_token',
                   scope: 'openid profile'
                 });
@@ -125,13 +125,13 @@
 
             logoutButton.addEventListener("click", function () {
               var webAuth = new auth0.WebAuth({
-                domain: "YOUR_AUTH0_DOMAIN",
-                clientID: "YOUR_AUTH0_CLIENT_ID"
+                domain: "dev-sode3aby0kgnwc8n.us.auth0.com",
+                clientID: "fHBaqxAuV9TMbWom4d0WBwnG0qtBoSIB"
               });
 
               webAuth.logout({
-                returnTo: "http://localhost:3000", // Replace with your app's URL
-                clientID: "YOUR_AUTH0_CLIENT_ID"
+                returnTo: "http://localhost:8080", // Replace with your app's URL
+                clientID: "fHBaqxAuV9TMbWom4d0WBwnG0qtBoSIB"
               });
             });
 
