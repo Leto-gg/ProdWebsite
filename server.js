@@ -10,7 +10,6 @@ app.listen(3000, () => {
 });
 
 
-
 var webAuth = new auth0.WebAuth({
   domain: 'dev-561zw80656alm5u3.us.auth0.com',
   clientID: 'JqMMyQWcS0npAOsWA_N8Xrf5nVU1DABfwlGuEQ4bPn5YDtnjCCBbl8gyreV2bj60'
@@ -23,3 +22,4 @@ function login() {
     scope: 'openid profile'
   });
 }
+
