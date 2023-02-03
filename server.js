@@ -1,7 +1,7 @@
 const express = require('express');
-const auth0 = require('auth0-js');
+
 const app = express();
-const dotenv = require('dotenv').config();
+
 
 app.use(express.static(__dirname + '/public'));
 

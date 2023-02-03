@@ -87,23 +87,7 @@
 
 
 
-          <head>
-            <!--  <script src="https://cdn.auth0.com/js/auth0/9.13/auth0.min.js"></script> -->
-            <script>
-              var webAuth = new auth0.WebAuth({
-                domain: '',
-                clientID: ''
-              });
 
-              function login() {
-                webAuth.authorize({
-                  redirectUri: 'http://localhost:8080/callback',
-                  responseType: 'token id_token',
-                  scope: 'openid profile'
-                });
-              }
-            </script>
-          </head>
 
 
           <li>
