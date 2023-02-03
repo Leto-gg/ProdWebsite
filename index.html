@@ -75,12 +75,15 @@
 
           <!-- ============= Auth0 Login =============== -->
           <!-- If you have a version of python3 installed you can use it as a web server! -->
-
-
-
-
-
-
+          <script>
+            function login() {
+              webAuth.authorize({
+                redirectUri: 'http://localhost:3000/callback',
+                responseType: 'token id_token',
+                scope: 'openid profile'
+              });
+            }
+          </script>
 
 
 
