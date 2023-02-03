@@ -10,7 +10,16 @@ app.listen(3000, () => {
 });
 
 
+
 var webAuth = new auth0.WebAuth({
-  domain: process.env.domain,
-  clientID: process.env.clientID
+  domain: 'dev-561zw80656alm5u3.us.auth0.com',
+  clientID: 'JqMMyQWcS0npAOsWA_N8Xrf5nVU1DABfwlGuEQ4bPn5YDtnjCCBbl8gyreV2bj60'
 });
+
+function login() {
+  webAuth.authorize({
+    redirectUri: 'http://localhost:8080/callback',
+    responseType: 'token id_token',
+    scope: 'openid profile'
+  });
+}
