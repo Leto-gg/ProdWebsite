@@ -1,8 +1,7 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const auth0 = require('auth0');
 const app = express();
-
+const dotenv = require('dotenv');
 
 app.use(express.static(__dirname + '/public'));
 
@@ -12,6 +11,6 @@ app.listen(3000, () => {
 
 
 var webAuth = new auth0.WebAuth({
-    domain: process.env.domain,
-    clientID: process.env.clientID
-  });
+  domain: process.env.domain,
+  clientID: process.env.clientID
+});
