@@ -2,6 +2,7 @@ const express = require('express');
 const auth0 = require('auth0-js');
 const app = express();
 require('dotenv').config();
+require('./lib/your-compiled-code');
 
 
 
