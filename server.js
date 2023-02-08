@@ -11,10 +11,10 @@ app.use(
   auth({
 
 
-    issuerBaseURL: 'https://YOUR_DOMAIN',
-    baseURL: 'https://YOUR_APPLICATION_ROOT_URL',
-    clientID: 'YOUR_CLIENT_ID',
-    secret: 'LONG_RANDOM_STRING',
+    issuerBaseURL: process.env.ISSUER_BASE_URL,
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.CLIENT_ID,
+    secret: process.env.SECRET,
   }),
 
   express.static(__dirname + '/public'));
