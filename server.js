@@ -6,18 +6,18 @@ require('dotenv').config();
 
 
 
-/* 
+
 app.use(
-  auth({
-
-
-    issuerBaseURL: process.env.ISSUER_BASE_URL,
-    baseURL: process.env.BASE_URL,
-    clientID: process.env.CLIENT_ID,
-    secret: process.env.SECRET,
-  }),
-*/
-express.static(__dirname + '/public');
+  /*  auth({
+ 
+ 
+     issuerBaseURL: process.env.ISSUER_BASE_URL,
+     baseURL: process.env.BASE_URL,
+     clientID: process.env.CLIENT_ID,
+     secret: process.env.SECRET,
+   }),
+ */
+  express.static(__dirname + '/public'));
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
