@@ -22,19 +22,12 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
-        }
-
-        .para-leto {
-            height: 20px;
             align-items: center;
-            justify-content: center;
-            color: aquamarine;
-            text-align: center;
-
+            width: 500px;
         }
 
         .search-logo {
-            background-color: #4285F4;
+            background-color: #ffffff;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -53,8 +46,9 @@
             border: none;
             border-bottom: 2px solid #4285F4;
             padding: 10px;
-            width: 100%;
+            width: 60%;
             outline: none;
+            margin-right: 20px;
         }
 
         .search-button {
@@ -64,28 +58,21 @@
             color: white;
             font-size: 18px;
             padding: 10px 20px;
-            margin-left: 20px;
             cursor: pointer;
         }
     </style>
 </head>
-<div
-    style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 300px; text-align: left; margin: 20px auto;">
-    <p>Retrieve the number of requests of an IPFS CID/BAFY via the Leto anonymous metrics engine</p>
-</div>
-
 
 <body>
     <div class="search-container">
         <form class="search-form">
-
-            <input type="text" class="search-input" placeholder="CID request volume">
-            <button type="submit" class="search-button">lookup</button>
+            <div class="search-logo">
+                <img src="assets/img/favicon.png" />
+            </div>
+            <input type="text" class="search-input" placeholder="Enter a CID">
+            <button type="submit" class="search-button">Lookup</button>
         </form>
-
     </div>
-
 </body>
-
 
 </html>
