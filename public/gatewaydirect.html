@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>IPFS Gateway Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #search-container {
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            height: 40px;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        button[type="submit"] {
+            width: 20%;
+            height: 40px;
+            background-color: #77b7ff;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="search-container">
+        <h1>Ask the Web3.Storage Gateway for an IPFS Object</h1>
+        <input id="cidInput" type="text" placeholder="Enter a CID" />
+        <button id="submitButton" type="submit">Go</button>
+    </div>
+
+    <script>
+        const submitButton = document.getElementById('submitButton');
+        const cidInput = document.getElementById('cidInput');
+
+        submitButton.addEventListener('click', () => {
+            const cid = cidInput.value;
+            const url = `https://${cid}.ipfs.w3s.link`;
+            window.location.href = url;
+        });
+    </script>
+</body>
+
+</html>
