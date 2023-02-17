@@ -20,7 +20,6 @@
             const cid = document.getElementById('cid').value
 
             // Send POST request to Elasticsearch server
-            // make sure to hide these details using a .env!
             const response = await fetch('https://your-elasticsearch-server.com/cid-request', {
                 method: 'POST',
                 headers: {
