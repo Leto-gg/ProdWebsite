@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notify Elasticsearch of CID Request</title>
+</head>
+
+<body>
+    <form>
+        <label for="cid">CID:</label>
+        <input type="text" id="cid" name="cid">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const form = document.querySelector('form')
+        form.addEventListener('submit', async event => {
+            event.preventDefault()
+            const cid = document.getElementById('cid').value
+
+            // Send POST request to Elasticsearch server
+            const response = await fetch('https://your-elasticsearch-server.com/cid-request', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ cid })
+            })
+
+            if (!response.ok) {
+                console.error('Error notifying Elasticsearch server')
+            }
+        })
+    </script>
+</body>
+
+</html>
