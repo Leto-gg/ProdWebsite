@@ -8,16 +8,17 @@ require('dotenv').config();
 
 
 app.use(
-  /*  auth({
- 
- 
-     issuerBaseURL: process.env.ISSUER_BASE_URL,
-     baseURL: process.env.BASE_URL,
-     clientID: process.env.CLIENT_ID,
-     secret: process.env.SECRET,
-   }),
- */
 
+  /*     ^^^^login with URL based Auth Token^^^
+      auth({
+   
+   
+       issuerBaseURL: process.env.ISSUER_BASE_URL,
+       baseURL: process.env.BASE_URL,
+       clientID: process.env.CLIENT_ID,
+       secret: process.env.SECRET,
+     }),
+  */
   express.static(__dirname + '/public'));
 
 app.listen(3000, () => {
@@ -34,3 +35,6 @@ var webAuth = new auth0.WebAuth({
   clientID: process.env.AUTH0_CLIENT_ID
 });
 */
+
+
+// main 
