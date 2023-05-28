@@ -43,6 +43,11 @@
             border: none;
             cursor: pointer;
         }
+
+        h4 {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -51,17 +56,29 @@
         <h1>Ask the Leto Gateway for an IPFS Object</h1>
         <input id="cidInput" type="text" placeholder="Enter a CID" />
         <button id="submitButton" type="submit">Go</button>
-        <h2>Example CID: bafybeihhgxbaywvizkcfqxdgfbu5ys242xxc4wiv5y7tykmfzp5qwyrtlq </h2>
+        <h4 id="exampleCid">Example CID: bafybeihhgxbaywvizkcfqxdgfbu5ys242xxc4wiv5y7tykmfzp5qwyrtlq</h4>
     </div>
 
     <script>
         const submitButton = document.getElementById('submitButton');
         const cidInput = document.getElementById('cidInput');
+        const exampleCid = document.getElementById('exampleCid');
 
         submitButton.addEventListener('click', () => {
             const cid = cidInput.value;
             const url = `https://leto.gg/ipfs/${cid}`;
             window.location.href = url;
+        });
+
+        exampleCid.addEventListener('click', () => {
+            const text = exampleCid.innerText.split(': ')[1];
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log('Text copied to clipboard:', text);
+                })
+                .catch((error) => {
+                    console.error('Failed to copy text:', error);
+                });
         });
     </script>
 </body>
