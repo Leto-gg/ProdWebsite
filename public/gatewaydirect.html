@@ -1,11 +1,12 @@
 <html>
 
 <head>
-    <title>Web3.Storage Gateway Search</title>
+    <title>Leto Gateway</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #222;
+            color: #eee;
         }
 
         #search-container {
@@ -25,8 +26,10 @@
             padding: 10px;
             font-size: 18px;
             border-radius: 5px;
-            border: 1px solid #ddd;
+            border: 1px solid #555;
             margin-bottom: 20px;
+            background-color: #333;
+            color: #eee;
         }
 
         button[type="submit"] {
@@ -44,7 +47,7 @@
 
 <body>
     <div id="search-container">
-        <h1>Ask the Web3.Storage Gateway for an IPFS Object</h1>
+        <h1>Ask the Leto Gateway for an IPFS Object</h1>
         <input id="cidInput" type="text" placeholder="Enter a CID" />
         <button id="submitButton" type="submit">Go</button>
     </div>
@@ -55,7 +58,7 @@
 
         submitButton.addEventListener('click', () => {
             const cid = cidInput.value;
-            const url = `https://${cid}.ipfs.w3s.link`;
+            const url = `https://leto.gg/ipfs/${cid}.`;
             window.location.href = url;
         });
     </script>
