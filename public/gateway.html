@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>leto lookup</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #eee;
+        }
+
+        #search-container {
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            height: 40px;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            margin-bottom: 20px;
+            background-color: #333;
+            color: #eee;
+        }
+
+        button[type="submit"] {
+            width: 20%;
+            height: 40px;
+            background-color: #b2699c;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        h4 {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="search-container">
+        <h1>Ask the Leto Gateway for an IPFS Object</h1>
+        <input id="cidInput" type="text" placeholder="Enter a CID" />
+        <button id="submitButton" type="submit">Go</button>
+        <h4 id="exampleCid">click to copy! Example CID: bafybeihhgxbaywvizkcfqxdgfbu5ys242xxc4wiv5y7tykmfzp5qwyrtlq</h4>
+    </div>
+
+    <script>
+        const submitButton = document.getElementById('submitButton');
+        const cidInput = document.getElementById('cidInput');
+        const exampleCid = document.getElementById('exampleCid');
+
+        submitButton.addEventListener('click', () => {
+            const cid = cidInput.value;
+            const url = `https://leto.gg/ipfs/${cid}`;
+            window.location.href = url;
+        });
+
+        exampleCid.addEventListener('click', () => {
+            const text = exampleCid.innerText.split(': ')[1];
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log('Text copied to clipboard:', text);
+                })
+                .catch((error) => {
+                    console.error('Failed to copy text:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
