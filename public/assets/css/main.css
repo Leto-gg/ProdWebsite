@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #aab5dc;
+  --color-primary: #2b396b; 
   --color-secondary: #555555;
 }
 
@@ -64,7 +64,7 @@ section {
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #404548;
 }
 
 .section-header {
@@ -206,7 +206,7 @@ section {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #fff;
+  border: 6px solid #222222;
   border-color: var(--color-primary) transparent var(--color-primary) transparent;
   border-radius: 50%;
   width: 60px;
@@ -248,7 +248,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #aab5dc;
+  background: #283562;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -405,6 +405,7 @@ section {
     width: 100%;
   }
 
+  /*Color for highlight on navbar titles when clicked or when hovering */
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
@@ -2005,7 +2006,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #aab5dc;
+  background: #283562;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
