@@ -18,7 +18,7 @@
 
 /* Colors */
 :root {
-  --color-default: #222222;
+  --color-default: #ffffff;
   --color-primary: #2b396b; 
   --color-secondary: #555555;
 }
@@ -29,7 +29,7 @@
 }
 
 /*--------------------------------------------------------------
-# General
+# General - color for the text in "About"
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
@@ -92,6 +92,7 @@ section {
   bottom: 0;
   margin: auto;
 }
+
 
 .section-header p {
   margin-bottom: 0;
@@ -197,7 +198,7 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: #fff;
+  background: #2b396b;
   transition: all 0.6s ease-out;
 }
 
@@ -362,7 +363,7 @@ section {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
-
+/*Color for navbar titles when they aren't clicked*/
   .navbar a,
   .navbar a:focus {
     display: flex;
@@ -372,7 +373,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: #a5a3a36a;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -385,6 +386,8 @@ section {
     margin-left: 5px;
   }
 
+/*Color for the line underlining a navbar title that has been clicked */
+
   .navbar > ul > li > a:before {
     content: "";
     position: absolute;
@@ -392,7 +395,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: #ffffff;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -410,7 +413,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover > a {
-    color: #fff;
+    color: #ffffff;
   }
 
   .navbar .dropdown ul {
@@ -423,7 +426,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: #b10000;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -503,12 +506,15 @@ section {
     z-index: 9997;
   }
 
+  /*--------------------------------------------------------------
+# Mobile Navigation Background color
+--------------------------------------------------------------*/
   .navbar ul {
     position: absolute;
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(171, 181, 220, 0.9);
+    background: #2b396b;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -603,11 +609,15 @@ section {
     right: 0;
   }
 
+  /*--------------------------------------------------------------
+# Mobile Navigation Background color on left side 
+--------------------------------------------------------------*/
+
   .mobile-nav-active .navbar:before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(196, 203, 231, 0.8);
+    background: #2b396bc7;
     z-index: 9996;
   }
 }
@@ -1471,8 +1481,8 @@ section {
 --------------------------------------------------------------*/
 .pricing .pricing-item {
   padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
-  background: #fff;
+  box-shadow: 0 3px 20px -2px rgba(125, 108, 121, 0.15);
+  background: #222222;
   height: 100%;
   position: relative;
   border-radius: 15px;
@@ -1482,7 +1492,7 @@ section {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #555555;
+  color: #a5a3a3;
   text-align: center;
 }
 
@@ -1499,6 +1509,7 @@ section {
   transform-style: preserve-3d;
 }
 
+/* Color for icons in pricing boxes*/
 .pricing .icon i {
   color: #fff;
   font-size: 28px;
@@ -1683,11 +1694,11 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Recent Blog Posts Section
+# Recent Blog Posts Section - color for article boxed under recent blog posts
 --------------------------------------------------------------*/
 .recent-posts article {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color:  #222222;
   padding: 30px;
   height: 100%;
   border-radius: 10px;
@@ -1732,10 +1743,10 @@ section {
   font-weight: 600;
   margin-bottom: 5px;
 }
-
+ /* Color for dates under each article  */
 .recent-posts .post-date {
   font-size: 14px;
-  color: #3c3c3c;
+  color: #ffffff;
   margin-bottom: 0;
 }
 
@@ -1923,6 +1934,7 @@ section {
   }
 }
 
+/*Color for text in hero main heading */
 .hero h2 {
   font-size: 48px;
   font-weight: 700;
@@ -1930,12 +1942,15 @@ section {
   color: #fff;
 }
 
+/*Color for text under main heading in hero*/
+
 .hero p {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   margin-bottom: 30px;
 }
 
+/*Color for the font inside the button on the main page*/
 .hero .btn-get-started {
   font-family: var(--font-primary);
   font-weight: 500;
@@ -2037,8 +2052,9 @@ section {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* color for hover over the hero feautures boxes */
 .hero .icon-box:hover {
-  background: #b3bcdf;
+  background: #2b396b;
 }
 
 .hero .icon-box:hover .title a,
@@ -2597,13 +2613,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Footer - font color for the headings 
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
   background-color: var(--color-primary);
   padding: 50px 0;
-  color: white;
+  color: #a5a3a3;
 }
 
 .footer .footer-info .logo {
