@@ -29,7 +29,7 @@
 }
 
 /*--------------------------------------------------------------
-# General - color for the text in "About"
+# General - color for the text in "About" and background color for about section
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
@@ -2015,7 +2015,7 @@ section {
     left: 0;
     right: 0;
     height: calc(50% + 20px);
-    background-color: #fff;
+    background-color: #222222;
   }
 }
 
