@@ -34,11 +34,13 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  background-color: #222222;
 }
 
 a {
   color: var(--color-primary);
   text-decoration: none;
+  
 }
 
 a:hover {
@@ -2036,7 +2038,7 @@ section {
   margin-bottom: 15px;
   font-size: 24px;
 }
-
+/* color for titles under icons in the feature boxes */
 .hero .icon-box .title a {
   color: #fff;
   transition: 0.3s;
@@ -2057,6 +2059,7 @@ section {
   background: #2b396b;
 }
 
+/* color for the titles when you hover over the hero feautures boxes */
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
   color: #fff;
