@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #ffffff;
-  --color-primary: #2b396b; 
+  --color-primary: #2b396b;
   --color-secondary: #555555;
 }
 
@@ -40,7 +40,6 @@ body {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  
 }
 
 a:hover {
@@ -94,7 +93,6 @@ section {
   bottom: 0;
   margin: auto;
 }
-
 
 .section-header p {
   margin-bottom: 0;
@@ -365,7 +363,7 @@ section {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
   }
-/*Color for navbar titles when they aren't clicked*/
+  /*Color for navbar titles when they aren't clicked*/
   .navbar a,
   .navbar a:focus {
     display: flex;
@@ -388,7 +386,7 @@ section {
     margin-left: 5px;
   }
 
-/*Color for the line underlining a navbar title that has been clicked */
+  /*Color for the line underlining a navbar title that has been clicked */
 
   .navbar > ul > li > a:before {
     content: "";
@@ -1049,6 +1047,19 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Documentation Section
+--------------------------------------------------------------*/
+.Documentation
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
@@ -1700,7 +1711,7 @@ section {
 --------------------------------------------------------------*/
 .recent-posts article {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  background-color:  #222222;
+  background-color: #222222;
   padding: 30px;
   height: 100%;
   border-radius: 10px;
@@ -1745,7 +1756,7 @@ section {
   font-weight: 600;
   margin-bottom: 5px;
 }
- /* Color for dates under each article  */
+/* Color for dates under each article  */
 .recent-posts .post-date {
   font-size: 14px;
   color: #ffffff;
