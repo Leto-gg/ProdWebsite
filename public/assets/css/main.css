@@ -849,14 +849,14 @@ section {
 
 
     .first-image {
-        margin-left: 200px;
+        margin-left: 250px;
         object-fit: cover;
         width: 300px;
         height: 300px; /* or you can use a fixed height like 300px */
     }
 
     .square-image {
-      margin-left: 70px;
+      margin-left: 100px;
       object-fit: cover;
       width: 300px;
       height: 300px; /* or you can use a fixed height like 300px */
