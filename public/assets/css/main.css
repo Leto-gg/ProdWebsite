@@ -846,6 +846,21 @@ section {
   font-size: 14px;
 }
 
+
+
+    .first-image {
+        margin-left: 250px;
+        object-fit: cover;
+        width: 300px;
+        height: 300px; /* or you can use a fixed height like 300px */
+    }
+
+    .square-image {
+      margin-left: 100px;
+      object-fit: cover;
+      width: 300px;
+      height: 300px; /* or you can use a fixed height like 300px */
+  }
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/

@@ -34,18 +34,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    .login-btn {
-      background-color: #414d7a;
-      border: 2px solid #ffffff1a;
-      border-radius: 50px;
-    }
-
-    .login-btn:hover {
-      background-color: #414d7a;
-      border-color: #ffffff80;
-    }
-  </style>
 
   <!-- =======================================================
   * Template Name: Impact - v1.2.0
@@ -77,22 +65,13 @@
         <!--  <h1>Impact<span>.</span></h1>-->
       </a>
       <nav id="navbar" class="navbar">
-        <div class="d-flex align-items-center gap-4">
-        <ul class="gap-2">
+        <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <!-- <li><a href="gateway.html">Gateway</a></li> -->
-          <li><a href="https://letodev.gitbook.io/getting-started/">Docs</a></li>
           <li><a href="https://blog.leto.gg/">Blog</a></li>
-          <a role="button" class="btn btn-primary px-4 py-2 text-white login-btn"
-          href="https://leto.auth.us-east-1.amazoncognito.com/oauth2/authorize?client_id=7rnajbnph8l91gaba84l3pltep&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fapi.leto.gg%2Fauth%2Fcallback">Login</a>
-      </div>
-        </nav><!-- .navbar -->
-  
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-  
-      </div>
+          <!-- <li><a href="gateway.html">Gateway</a></li> -->
+          <li><a href="https://letodev.gitbook.io/leto-documentation-1/">Documentation</a></li>
+
           <!-- ============= Auth0 Login =============== -->
           <!-- If you have a version of python3 installed you can use it as a web server! -->
 
@@ -146,7 +125,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         -->
-      </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
   </header><!-- End Header -->
   <!-- End Header -->
 
@@ -155,12 +139,12 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Your data<span> on the Open Web</span></h2>
+          <h2>Your data<span> on the OpenWeb</span></h2>
           <p>Leto empowers developers and users by providing insights about
             data stored on IPFS
           </p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="https://leto.auth.us-east-1.amazoncognito.com/oauth2/authorize?client_id=7rnajbnph8l91gaba84l3pltep&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fapi.leto.gg%2Fauth%2Fcallback" class="btn-get-started">Get Started</a>
+            <a href="#about" class="btn-get-started">Get Started</a>
             <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
               class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
                 Video</span></a> -->
@@ -176,12 +160,13 @@
       <div class="container position-relative">
         <div class="row gy-4 mt-5">
 
-           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-bar-chart-line-fill"></i></div>
               <h4 class="title"><a href="/query.html" class="stretched-link">IPFS Metrics</a></h4>
             </div>
           </div>
+          <!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
@@ -189,15 +174,15 @@
               <h4 class="title"><a href="/gatewaydirect.html" class="stretched-link">Object Pin Status</a></h4>
             </div>
           </div>
-          
+          <!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-speedometer"></i></div>
-              <h4 class="title"><a href="#" class="stretched-link">Retrieval Statistics</a></h4>
+              <h4 class="title"><a href="/query.html" class="stretched-link">Retrieval Statistics</a></h4>
             </div>
           </div>
-          
+          <!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
@@ -223,43 +208,41 @@
 
         <div class="section-header">
           <h2>About Us</h2>
-          <p> Leto helps developers manage and grow their systems without collecting vast amounts of unnecessary user data.</p>
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6" style="margin-top: 130px;">
-            <h3>Privacy-preserving analytics data your team can rely on.</h3> 
-           <p style="margin-top: 22px;"> Measure the activity, performance, and reliability of IPFS data storage and retrieval systems using anonymized, aggregate data.</p>
+          <div class="col-lg-6">
+            <h3>The future of safe data is here</h3>
+            <p>IPFS (Interplanetary File System) and Filecoin are key decentralized technologies that are
+              revolutionizing the way data is stored and managed.</p>
+            <img src="assets/img/sinceyouleftme.png" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Developers and Users want to leverage self-sovereign data, meaning that individuals can store and access
+              their data
+              without relying on centralized entities like corporations or governments.</p>
           </div>
           <div class="col-lg-6">
-            <div class="position-relative mt-4">
-              <img src="assets/img/iloveu2.png" class="img-fluid rounded-4" alt="" width="440" height="auto">
-          </div>
+            <div class="content ps-0 ps-lg-5">
+              <p>
+                Here at Leto, our mission is providing safe tools that help
+                Open Web developers manage their business while protecting their users.
+                These tools help measure the performance, security, and reliability
+                of data storage and retrieval systems operating on IPFS.
+              </p>
+              <p>
+                The open-source development of these tools will ensure that the technologies remain
+                transparent and
+                accountable.
+              </p>
+              <div class="position-relative mt-4">
+                <img src="assets/img/iloveu2.png" class="img-fluid rounded-4" alt="">
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section><!-- End About Us Section -->
 
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <img src="assets/img/sinceyouleftme.png" class="img-fluid rounded-4 mb-4" alt="" width="440" height="auto" style="margin-left: 10px;">
-          </div>
-          <div class="col-lg-6" style="margin-top: 20px;">
-            <div class="content ps-0 ps-lg-5">
-              <p>
-                <h3>IPFS and Filecoin enable verifiable, self soverign systems that provide resilient data access.</h3>
-              <p>The analytics used in these systems must provide a similar model of privacy and resiliency.</p>
-              <p>The open source development of these tools will ensure Leto remains transparent and accountable to the open web.</p>
-            </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <section id="content" class="section-padding">
       <div class="container" data-aos="fade-up">
@@ -269,27 +252,16 @@
               <h2>Leto Analytics: How it works</h2>
               <p>Discover how Leto recieves, stores, and provides Analytics for the IPFS Ecosystem</p>
           </div>
-
-             <!-- Images added here -->
-             <div class="row">
-              <div class="col-lg-6">
-                  <img src="assets/img/AnalyticsImage.svg" alt="Image 1" class="img-fluid first-image">
-              </div>
-              <div class="col-lg-6">
-                  <img src="assets/img/GatewayGraphic.svg" alt="Image 2" class="img-fluid square-image">
-              </div>
-          </div>
-          <!-- Images section ends here -->
   
           <div class="col-lg-12">
             <p>
               At Leto, we offer analytic solutions for a more open and sustainable tomorrow
             </p>
             <ul>
-              <li><strong>IPFS Gateways:</strong> Use our gateway to serve content and Leto will provide you anonymous and open analytics through our Analytics API.  <a href="https://github.com/Leto-gg/analytics-api">View on GitHub</a></li>
-              <li><strong>Transparency:</strong> We try to make our Analytics mechanisms easy to understand and every line of our code is public. <a href="https://github.com/Leto-gg">View on GitHub</a></li>
-              <li><strong>Open Analytics API:</strong> Contact our api to see how many times an IPFS object was requested through the network. <a href="https://letodev.gitbook.io/getting-started/documentation/analytics-rest-api">View our docs</a></li>
-              <li><strong>Engage with Us:</strong> Contribute to the future of analytics. Reach out on <a href="mailto:admin@galaxyx.io">Email</a>, <a href="https://github.com/Leto-gg">GitHub</a>, or <a href="https://twitter.com/Letodev">@Letodev</a> on Twitter.</li>
+              <li><strong>IPFS Gateways:</strong> Use our gateway to serve your content and we will provide you anonymous and open analytics.  <a href="https://github.com/Leto-gg/analytics-api">View on GitHub</a></li>
+              <li><strong>Transparency:</strong> Our analytics mechanisms are easy to understand and every line of our code is public. <a href="https://github.com/Leto-gg">View on GitHub</a></li>
+              <li><strong>User Control:</strong> Through our Analytics API, our data sets are accessible to all. Developers and users alike can retrieve their data anytime.</li><a href="https://github.com/Leto-gg/analytics-api">View on GitHub</a></li>
+              <li><strong>Engage with Us:</strong> Contribute to the future of analytics. Reach out on <a href="mailto:admin@galaxyx.io">email</a>, <a href="https://github.com/Leto-gg">GitHub</a>, or <a href="https://twitter.com/Letodev">@Letodev</a> on Twitter.</li>
             </ul>
           </div>
         </div>
@@ -297,6 +269,8 @@
     </section>
 
 
+
+    
     <!-- ======= Clients Section ======= -->
     <!--
     <section id="clients" class="clients">
@@ -842,23 +816,26 @@
 
         <div class="section-header">
           <h2>Pricing</h2>
-          <p>Find a plan that's right for you</p>
+          <p>Find a plan that is right for you
+            based
+            on your needs</p>
         </div>
 
         <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
 
           <div class="col-lg-4">
             <div class="pricing-item">
-              <h3>Free Plan</h3>
+              <h3>Professional Plan</h3>
               <div class="icon">
-                <i class="bi bi-box"></i>
+                <i class="bi bi-boxes"></i>
               </div>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h4><sup>$</sup>15<span> / month</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> Open Metrics Query</li>
-                <li><i class="bi bi-check"></i> HTTP Gateway Access</li>
+                <li><i class="bi bi-check"></i> Superfast Gateway Access</li>
+                <li><i class="bi bi-check"></i> Encrypted Log Streaming</li>
+                <li><i class="bi bi-check"></i> Event Based Notifications</li>
               </ul>
-              <div class="text-center"><a href="https://letodev.gitbook.io/getting-started/" class="buy-btn">Try it out!</a></div>
+              <div class="text-center"><a href="#" class="buy-btn">Coming Soon!</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -868,18 +845,18 @@
 
           <div class="col-lg-4">
             <div class="pricing-item featured">
-              <h3>Professional Plan</h3>
+              <h3>Free Plan</h3>
               <div class="icon">
-                <i class="bi bi-boxes"></i>
+                <i class="bi bi-box"></i>
               </div>
 
-              <h4><sup>$</sup>15<span> / month</span></h4>
+              <h4><sup>$</sup>0<span> / month</span></h4>
               <ul>
-                <li><i class="bi bi-check"></i> Superfast Gateway Access</li>
-                <li><i class="bi bi-check"></i> Encrypted Log Streaming</li>
-                <li><i class="bi bi-check"></i> Event Based Notifications</li>
+                <li><i class="bi bi-check"></i> Open Metrics Query</li>
+                <li><i class="bi bi-check"></i> HTTP Gateway Access</li>
               </ul>
-              <div class="text-center"><a href="#" class="buy-btn">Coming soon!</a></div>
+              <div class="text-center"><a href="https://letodev.gitbook.io/leto-documentation-1/" class="buy-btn">Try it
+                  out!</a></div>
             </div>
           </div><!-- End Pricing Item -->
 
@@ -1045,6 +1022,7 @@
 
         <div class="section-header">
           <h2>Recent Blog Posts</h2>
+          <p>Information and Posts within the Open Source - Open Web space </p>
         </div>
 
         <div class="row gy-4">
@@ -1053,13 +1031,13 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/leto-asset-2.png" alt="" class="img-fluid">
+                <img src="assets/img/ProjectUpdates.png" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Report</p>
+              <p class="post-category">Blog</p>
 
               <h2 class="title">
-                <a href="https://blog.leto.gg/leto-project-report-august-2">Leto Project Report: August 02, 2023</a>
+                <a href="https://blog.leto.gg/leto-project-update-july-14-2023">Leto Project Update: July 14, 2023</a>
               </h2>
 
               <div class="d-flex align-items-center">
@@ -1067,7 +1045,7 @@
                 <div class="post-meta">
                   <p class="post-author">Alex Mirran</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">Aug 02, 2023</time>
+                    <time datetime="2022-01-01">Jul 14, 2023</time>
                   </p>
                 </div>
               </div>
@@ -1079,22 +1057,22 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/LetoWeb3.png" alt="" class="img-fluid">
+                <img src="assets/img/openlinks-small.png" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Blog</p>
+              <p class="post-category">Community</p>
 
               <h2 class="title">
-                <a href="https://blog.leto.gg/how-we-got-here">How we got here
-                </a>
+                <a href="https://blog.web3.storage/posts/openlinks-case-study">Blog about us from our friends at
+                  Web3.Storage!</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/LetoLogoBlackBackground.png" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/image (1).webp" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Leto Team</p>
+                  <p class="post-author">Web3.Storage</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">July 24, 2023</time>
+                    <time datetime="2022-01-01">Dec 19, 2022</time>
                   </p>
                 </div>
               </div>
@@ -1107,21 +1085,22 @@
             <article>
 
               <div class="post-img">
-                <img src="assets/img/ProjectUpdates.png" alt="" class="img-fluid">
+                <img src="assets/img/leto-asset-2.png" alt="" class="img-fluid">
               </div>
 
-              <p class="post-category">Report</p>
+              <p class="post-category">Newsletter</p>
 
               <h2 class="title">
-                <a href="https://blog.leto.gg/leto-project-report-july-14">Leto Project Report: July 14, 2023</a>
+                <a href="https://alexmirran.substack.com/">Top news of the week from Peer to Peer Networks, Bitcoin,
+                  Decentralized Finance, NFTs, and more.</a>
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/loganl.png" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <img src="assets/img/am.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Logan Lentz</p>
+                  <p class="post-author">Alex Mirran</p>
                   <p class="post-date">
-                    <time datetime="2022-01-01">July 14, 2023</time>
+                    <time datetime="2022-01-01">Every Week!</time>
                   </p>
                 </div>
               </div>
@@ -1230,9 +1209,10 @@
               <span>Leto.gg</span>
             </a>
             <p>An Open-Source Community Operated Metrics Engine
-              built for the Open-Web and its users.</p>
+              built
+              for the Open-Web and its users.</p>
             <div class="social-links d-flex mt-4">
-              <a href="https://twitter.com/LetoDev" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://twitter.com/galaxyx_io" class="twitter"><i class="bi bi-twitter"></i></a>
             </div>
           </div>
 
@@ -1241,6 +1221,7 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
               <li><a href="#">Terms of Service</a></li>
               <li><a href="#">Privacy Policy</a></li>
             </ul>
