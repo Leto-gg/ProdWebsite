@@ -851,7 +851,7 @@ section {
 
 
 .first-image {
-  margin-left: 170px;
+  margin-left: 140px;
   object-fit: cover;
   width: 300px;
   height: 300px; /* or you can use a fixed height like 300px */
@@ -873,7 +873,6 @@ font-size: 1rem;
 color: #7F8C8D; /* Gray */
 }
 
-
 /* Content Styling */
 .col-lg-12 p {
 font-size: 1.1rem;
@@ -892,7 +891,7 @@ font-size: 1rem;
 }
 
 .col-lg-12 a {
-color: #E74C3C; /* Red */
+color: #a9779e; /* Red */
 text-decoration: none;
 }
 
