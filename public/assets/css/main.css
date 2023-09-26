@@ -847,17 +847,20 @@ section {
 }   
 
 .first-image {
-  margin-left: 150px;
+  margin-left: 120px;
   object-fit: cover;
   width: 300px;
   height: 300px; /* or you can use a fixed height like 300px */
+  margin-bottom: 100px; /* Adjust as needed */
+  
 }
 
-.square-image {
+.square-image { /* Holly shit why would I name elements this*/
 margin-left: 100px;
 object-fit: cover;
 width: 300px;
 height: 300px; /* or you can use a fixed height like 300px */
+margin-bottom: 100px;
 }
 /* Section Header Styling */
 
@@ -865,6 +868,7 @@ height: 300px; /* or you can use a fixed height like 300px */
 font-size: 1rem;
 color: #7F8C8D; /* Gray */
 }
+
 
 /* Content Styling */
 .col-lg-12 p {
@@ -890,6 +894,8 @@ text-decoration: none;
 
 .col-lg-12 a:hover {
 text-decoration: underline;
+
+
 }
 
 /*--------------------------------------------------------------
