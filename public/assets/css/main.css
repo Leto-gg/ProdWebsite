@@ -180,7 +180,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  background: rgba(215, 138, 125, 0.8);
   color: #fff;
 }
 
@@ -328,7 +328,7 @@ section {
 }
 
 .header .logo h1 span {
-  color: #f96f59;
+  color: #a9779e;
 }
 
 .sticked-header-offset {
@@ -426,7 +426,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #b10000;
+    background: #a9779e;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -850,12 +850,11 @@ section {
 /* Images and Bullet */
 
 
-.first-image {
-  margin-left: 140px;
-  object-fit: cover;
-  width: 300px;
-  height: 300px; /* or you can use a fixed height like 300px */
-  margin-bottom: 100px; /* Adjust as needed */
+.dual-image {
+  display: grid;
+  place-items: center;
+  height: 300px; /* or any desired height */
+  margin-bottom: 50px; /* Adjust as needed */
   
 }
 
