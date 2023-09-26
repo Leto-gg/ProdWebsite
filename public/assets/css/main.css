@@ -812,6 +812,7 @@ section {
 /*--------------------------------------------------------------
 # Stats Counter Section
 --------------------------------------------------------------*/
+
 .stats-counter {
   padding: 40px 0;
 }
@@ -846,8 +847,11 @@ section {
   font-size: 14px;
 }   
 
+/* Images and Bullet */
+
+
 .first-image {
-  margin-left: 120px;
+  margin-left: 170px;
   object-fit: cover;
   width: 300px;
   height: 300px; /* or you can use a fixed height like 300px */
@@ -856,7 +860,7 @@ section {
 }
 
 .square-image { /* Holly shit why would I name elements this*/
-margin-left: 100px;
+margin-left: 60px;
 object-fit: cover;
 width: 300px;
 height: 300px; /* or you can use a fixed height like 300px */
