@@ -844,23 +844,54 @@ section {
   margin: 0;
   font-family: var(--font-primary);
   font-size: 14px;
+}   
+
+.first-image {
+  margin-left: 150px;
+  object-fit: cover;
+  width: 300px;
+  height: 300px; /* or you can use a fixed height like 300px */
 }
 
+.square-image {
+margin-left: 100px;
+object-fit: cover;
+width: 300px;
+height: 300px; /* or you can use a fixed height like 300px */
+}
+/* Section Header Styling */
 
+.section-header p {
+font-size: 1rem;
+color: #7F8C8D; /* Gray */
+}
 
-    .first-image {
-        margin-left: 250px;
-        object-fit: cover;
-        width: 300px;
-        height: 300px; /* or you can use a fixed height like 300px */
-    }
+/* Content Styling */
+.col-lg-12 p {
+font-size: 1.1rem;
+margin-bottom: 20px;
+color: #fff; /* White */
+}
 
-    .square-image {
-      margin-left: 100px;
-      object-fit: cover;
-      width: 300px;
-      height: 300px; /* or you can use a fixed height like 300px */
-  }
+.col-lg-12 ul {
+padding-left: 20px;
+color: rgba(255, 255, 255, 0.863);
+}
+
+.col-lg-12 li {
+margin-bottom: 10px;
+font-size: 1rem;
+}
+
+.col-lg-12 a {
+color: #E74C3C; /* Red */
+text-decoration: none;
+}
+
+.col-lg-12 a:hover {
+text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
