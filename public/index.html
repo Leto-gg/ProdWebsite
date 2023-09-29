@@ -32,7 +32,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Added CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
     .login-btn {
@@ -45,7 +45,37 @@
       background-color: #414d7a;
       border-color: #ffffff80;
     }
+
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 110px; /* Adjust this value based on the width of your image */
+    padding-top: 40px; /* Padding above the text and icon */
+    padding-bottom: 40px; /* Padding below the text and icon */
+}
+
+.list-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* This will vertically center the image with the text */
+    width: 80px; /* Adjust this value based on your desired image width */
+    height: 80px; /* Adjust this value based on your desired image height */
+    object-fit: cover; /* This ensures the image retains its aspect ratio */
+}
+
+/* New styles for the two-column layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
   </style>
+  
 
   <!-- =======================================================
   * Template Name: Impact - v1.2.0
@@ -227,7 +257,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-6" style="margin-top: 130px;">
+          <div class="col-lg-6" style="margin-top: 100px;">
             <h3>Privacy-preserving analytics your team can rely on.</h3> 
            <p style="margin-top: 22px;"> Measure the activity, performance, and reliability of IPFS data storage and retrieval systems using anonymized, aggregate data.</p>
           </div>
@@ -279,16 +309,40 @@
           <!-- Images section ends here -->
   
           <div class="col-lg-12">
-            <h2>
-              Connecting your system with Leto
-            </h2>
-            <ul>
-              <li><strong>IPFS Gateway:</strong> Use our gateway to serve content and Leto will provide you anonymous and open analytics through our Analytics API.  <a href="https://github.com/Leto-gg/analytics-api">View on GitHub</a></li>
-              <li><strong>Open Analytics API:</strong> Query our api to see how many times an IPFS object was requested through the network. <a href="https://letodev.gitbook.io/getting-started/documentation/analytics-rest-api">View our docs</a></li>
-              <li><strong>Engage with Us:</strong> Contribute to the future of analytics. Reach out on <a href="mailto:admin@galaxyx.io">Email</a>, or <a href="https://twitter.com/Letodev">@Letodev</a> on Twitter.</li>
-              <li><strong>Transparency:</strong> Our Analytics mechanisms are easy to understand and every line of our code is public. <a href="https://github.com/Leto-gg">View on GitHub</a></li>
-            </ul>
-          </div>
+            <h2>Connecting your system with Leto</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="custom-list">
+                        <li>
+                            <img src="assets/img/gatewayIcon.png" alt="Icon" class="list-icon">
+                            <div><strong>IPFS Gateway:</strong></div>
+                            Use our gateway to serve content and Leto will provide you anonymous and open analytics through our Analytics API. <a href="https://github.com/Leto-gg/analytics-api">View on GitHub</a>
+                        </li>
+                        <li>
+                            <img src="assets/img/apiIcon.png" alt="Icon" class="list-icon">
+                            <div><strong>Open Analytics API:</strong></div>
+                            Query our api to see how many times an IPFS object was requested through the network. <a href="https://letodev.gitbook.io/getting-started/documentation/analytics-rest-api">View our docs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="custom-list">
+                        <li>
+                            <img src="assets/img/codeIcon.png" alt="Icon" class="list-icon">
+                            <div><strong>Transparency:</strong></div>
+                            Our Analytics mechanisms are easy to understand and every line of our code is public. <a href="https://github.com/Leto-gg">View on GitHub</a>
+                        </li>
+                        <li>
+                            <img src="assets/img/talkIcon.png" alt="Icon" class="list-icon">
+                            <div><strong>Engage with Us:</strong></div>
+                            Contribute to the future of analytics. Reach out on <a href="mailto:admin@galaxyx.io">Email</a>, or <a href="https://twitter.com/Letodev">@Letodev</a> on Twitter.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
         </div>
       </div>
     </section>

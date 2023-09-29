@@ -99,6 +99,8 @@ section {
   color: #6f6f6f;
 }
 
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -155,6 +157,7 @@ section {
   color: var(--color-secondary);
   content: "/";
 }
+
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -873,6 +876,7 @@ color: #7F8C8D; /* Gray */
 }
 
 /* Content Styling */
+
 .col-lg-12 p {
 font-size: 1.1rem;
 margin-bottom: 20px;
@@ -899,6 +903,7 @@ text-decoration: underline;
 
 
 }
+
 
 /*--------------------------------------------------------------
 # Call To Action Section
