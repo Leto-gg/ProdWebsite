@@ -2101,12 +2101,12 @@ text-decoration: underline;
     background-color: #222222;
   }
 }
-
+/* color for boxes under homepage*/
 .hero .icon-box {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #283562;
+  background: #383838;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
