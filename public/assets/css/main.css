@@ -19,10 +19,15 @@
 /* Colors */
 :root {
   --color-default: #ffffff;
-  --color-primary: #2b396b;
+  --color-primary: linear-gradient(to right, 
+                                   #2b396b, 
+                                   #1e2a52, 
+                                   #19244a,
+                                   #111c41, 
+                                   #0b1535, 
+                                   #040d22);
   --color-secondary: #555555;
 }
-
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
@@ -87,7 +92,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background: #2b396b;
   left: 0;
   right: 0;
   bottom: 0;
@@ -300,12 +305,20 @@ section {
   color: #fff;
 }
 
+/*color for navbar*/
 .header {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: var(--color-primary);
+  background: linear-gradient(to right, 
+              #2b396b, 
+              #1e2a52, 
+              #19244a,
+              #111c41, 
+              #0b1535, 
+              #040d22);
 }
+
 
 .header.sticked {
   position: fixed;
@@ -1682,7 +1695,7 @@ text-decoration: underline;
 
 .pricing .featured {
   z-index: 10;
-  border: 3px solid var(--color-primary);
+  border: 3px solid #2b396b;
 }
 
 @media (min-width: 992px) {
@@ -2088,12 +2101,12 @@ text-decoration: underline;
     background-color: #222222;
   }
 }
-
+/* color for boxes under homepage*/
 .hero .icon-box {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #283562;
+  background: #383838;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
